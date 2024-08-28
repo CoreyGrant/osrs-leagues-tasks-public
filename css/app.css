@@ -1,0 +1,132 @@
+/*All*/
+*{
+    box-sizing: border-box;
+}
+#app{
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    background-color: rgb(162, 144, 97);
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.app-top-bar{
+    height: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 4px;
+    margin-left: -6px;
+    border-bottom: 3px solid rgb(79, 69, 47);
+    box-shadow: 2px solid rgb(79, 69, 47); 
+}
+.app-top-bar .app-top-bar-title{
+    font-size: 24px;
+    color: rgb(109, 66, 17);
+    font-weight: bolder;
+    margin-top:-4px;
+}
+.app-top-bar-title{
+    max-width: 37%;
+}
+/*Desktop*/
+.app-container{
+    margin-top: 40px;
+    padding: 6px;
+    height: 100%;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.fake-table-row.completed{
+    background-color: green;
+}
+.form-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form-input>input{
+    margin-right: 4px;
+}
+
+.app-top-bar-username-input{
+    width: 120px;
+    font-size: 12px;
+    height: 20px;
+}
+/*Tablet*/
+@media(max-width: 1085px){
+    .app-top-bar .app-top-bar-title{
+        font-size: 20px;
+        color: rgb(109, 66, 17);
+        font-weight: bolder;
+    }
+    .app-container{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+    }
+    *{
+        font-size: 0.9rem;
+    }
+    img{
+        height: 16px;
+        width: 16px;
+    }
+    
+}
+
+/*Mobile*/
+@media (max-width: 768px){
+    .app-top-bar-right{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .app-top-bar-username{
+        display: flex;
+        flex-direction: row;
+    }
+    .app-top-bar-icons{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 0px;
+        right: -10px;
+    }
+    *{
+        font-size: 0.8rem;
+    }
+    .app-top-bar-username-input{
+        width: 100px;
+    }
+    
+    .app-top-bar{
+        height: 60px;
+    }
+    .app-top-bar .app-top-bar-title{
+        font-size: 16px;
+        color: rgb(109, 66, 17);
+        font-weight: bolder;
+    }
+    img{
+        height: 16px;
+        width: 16px;
+    }
+    
+    .app-container{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+}
